@@ -12,14 +12,14 @@
     <div class="pessoas">
         <% pessoas.forEach((pessoa) => { %>
            <div class="exibicao">
-            <div><%= pessoa.nome %></div>
-            <div><%= pessoa.sobrenome %></div>
-            <div><%= pessoa.idade %></div>
-             <a href="/pessoas/delete?id=<%=pessoa.id%>">Deletar</a>
+            <p><%= pessoa.nome %>
+            <%= pessoa.sobrenome %>
+            <%= pessoa.idade %>
+            <a href="/pessoas/delete?id=<%=pessoa.id%>" id="delete"> Deletar</a></p>
            </div> 
         <% }) %>
 
-        <a href="/pessoas/criar">Cadastrar/Voltar</a>
+        <a href="/pessoas/criar" id="link">Cadastrar/Voltar</a>
     </div>  
 </body>
 </html>
